@@ -4,10 +4,6 @@ import App from './App.jsx';
 import './index.css';
 import r2wc from 'react-to-webcomponent';
 
-const wcApp = r2wc(App, React, ReactDOM, {
-  props: {
-    name: 'string',
-  },
-});
+const wcApp = r2wc(App, React, ReactDOM);
 
-customElements.define('wc-app', wcApp);
+customElements.define('my-react-app', wcApp);
